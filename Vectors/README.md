@@ -27,20 +27,20 @@ vector<type> vector-name(size); // Declare a vector with a specific size
 vector<type> vector-name(size, value); // Declare a vector with a specific size and initial value
 ```
 
-### Syntax for pushing an element into a vector
+### Pushing an element into a vector
 
 ```cpp
 vector-name.push_back(value); // Add an element to the end of the vector
 vector-name.insert(position, value); // Insert an element at the specified position
 ```
 
-### Syntax for accessing elements in a vector
+### Accessing elements in a vector
 
 ```cpp
 vector-name[index]; // Access the element at the specified index
 ```
 
-### Syntax for iterating through a vector
+### Iterating through a vector
 
 ```cpp
 for (int i = 0; i < vector-name.size(); i++) {
@@ -56,40 +56,40 @@ for (const auto& element : vector-name) {
 }
 ```
 
-### Syntax for removing an element from a vector
+### Removing an element from a vector
 
 ```cpp
 vector-name.erase(index); // Remove the element at the specified index
 vector-name.pop_back(); // Remove the last element from the vector
 ```
 
-### Syntax to see the value at the front and back of a vector
+### Find the value at the front and back of a vector
 
 ```cpp
 vector-name.front(); // Access the first element
 vector-name.back();  // Access the last element
 ```
 
-### Syntax to see the last inserted element in a vector
+### Find the last inserted element in a vector
 
 ```cpp
 vector-name.back();  // Access the last element
 ```
 
-### Syntax for resizing a vector
+### Resizing a vector
 
 ```cpp
 vector-name.resize(new_size); // Change the size of the vector
 vector-name.reserve(new_capacity); // Reserve space for a new capacity
 ```
 
-### Syntax for clearing a vector
+### Clearing a vector
 
 ```cpp
 vector-name.clear(); // Remove all elements from the vector
 ```
 
-### Syntax for checking if a vector is empty
+### Checking if a vector is empty
 
 ```cpp
 if (vector-name.empty()) {
@@ -97,14 +97,14 @@ if (vector-name.empty()) {
 }
 ```
 
-### Syntax for getting the size and capacity of a vector
+### Getting the size and capacity of a vector
 
 ```cpp
 size_t current_size = vector-name.size();      // Get the current size of the vector
 size_t current_capacity = vector-name.capacity(); // Get the current capacity of the vector
 ```
 
-### Syntax for sorting a vector
+### Sorting a vector
 
 ```cpp
 #include <algorithm> // Include the algorithm header
@@ -112,7 +112,7 @@ using namespace std; // Use the standard namespace
 sort(vector-name.begin(), vector-name.end()); // Sort the vector in ascending order
 ```
 
-### Syntax for reversing a vector
+### Reversing a vector
 
 ```cpp
 #include <algorithm> // Include the algorithm header
@@ -120,7 +120,7 @@ using namespace std; // Use the standard namespace
 reverse(vector-name.begin(), vector-name.end()); // Reverse the vector
 ```
 
-### Syntax for finding an element in a vector
+### Finding an element in a vector
 
 ```cpp
 #include <algorithm> // Include the algorithm header
@@ -133,7 +133,7 @@ else {
 }
 ```
 
-### Syntax for copying a vector
+### Copying a vector
 
 ```cpp
 #include <algorithm> // Include the algorithm header
@@ -141,7 +141,7 @@ using namespace std; // Use the standard namespace
 vector<type> new_vector = vector-name; // Copy the original vector
 ```
 
-### Syntax for swapping two vectors
+### Swapping two vectors
 
 ```cpp
 #include <algorithm> // Include the algorithm header
@@ -149,7 +149,7 @@ using namespace std; // Use the standard namespace
 swap(vector-name1, vector-name2); // Swap the contents of two vectors
 ```
 
-### Syntax for merging two vectors
+### Merging two vectors
 
 ```cpp
 #include <algorithm> // Include the algorithm header
@@ -160,7 +160,7 @@ merge(vector-name1.begin(), vector-name1.end(),
       back_inserter(merged_vector)); // Merge two sorted vectors
 ```
 
-### Syntax for checking if two vectors are equal
+### Checking if two vectors are equal
 
 ```cpp
 #include <algorithm> // Include the algorithm header
@@ -173,7 +173,7 @@ else {
 }
 ```
 
-### Syntax of resizing / slicing a vector with lower and upper bounds
+### Resizing / slicing a vector with lower and upper bounds
 
 ```cpp
 #include <vector>   // Include the vector header
@@ -182,7 +182,7 @@ vector<type> sub_vector(vector-name.begin() + lower_bound, vector-name.begin() +
 // Create a sub-vector from the original vector using lower and upper bounds
 ```
 
-### Syntax for finding the maximum and minimum elements in a vector
+### Finding the maximum and minimum elements in a vector
 
 ```cpp
 #include <algorithm> // Include the algorithm header
@@ -193,7 +193,7 @@ type max_element = *min_max.second;
 // Find the minimum and maximum elements in the vector
 ```
 
-### Syntax for finding the maximum element in a vector
+### Finding only the maximum element in a vector
 
 ```cpp
 #include <algorithm> // Include the algorithm header
@@ -202,7 +202,7 @@ auto max_element = *max_element(vector-name.begin(), vector-name.end());
 // Find the maximum element in the vector
 ```
 
-### Syntax for finding the minimum element in a vector
+### Finding only the minimum element in a vector
 
 ```cpp
 #include <algorithm> // Include the algorithm header
